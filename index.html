@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Fermata.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Fermata</title>
+</head>
+<body>
+
+	<div class="header">
+		<header>
+			<ul class="button">		
+				<li class="btns"><a href="index.html">Inicio</a></li>
+				<li class="btns"><a href="us.html">¿Quiénes somos?</a></li>
+			</ul>
+		</header>
+	</div>
+
+    <section class="eleccionDeseos">
+        <header class="centralizarTexto encabezadoDeseos centralizarElemento" >
+            <h1 id="tituloTexto">Mi Mundo Ideal</h1>
+            <p>¿Mi mundo es ético o distópico?<Br> - Juego -</p>
+        </header>
+        <section class="articulosElecciones ">
+            <header class="centralizarTexto">
+                 <h2>Quiero que mi mundo tenga...</h2>
+            </header>
+            <div class="contenedorFlex centralizarElemento">
+            	<div class="col-md-3">
+            		<article>
+	                    <input type="checkbox" id="elemento1" class="utopico"><label for="elemento1"> Salarios altos</label><br>
+	                    <input type="checkbox" id="elemento2" class="utopico"><label for="elemento2"> Agua en abundancia</label><br>
+	                    <input type="checkbox" id="elemento3" class="utopico"><label for="elemento3"> Campos de fútbol</label><br>
+	                    <input type="checkbox" id="elemento4" class="utopico"><label for="elemento4"> Gente amable</label><br>
+	                    <input type="checkbox" id="elemento5" class="utopico"><label for="elemento5"> Coches voladores</label><br>
+	                    <input type="checkbox" id="elemento6" class="utopico"><label for="elemento6"> Estaciones de carga eléctrica</label><br>
+	                    <input type="checkbox" id="elemento7" class="utopico"><label for="elemento7"> Áreas verdes extensas </label><br>
+	                    <input type="checkbox" id="elemento8" class="utopico"><label for="elemento8"> Tecnología inalámbrica</label><br>
+	                    <input type="checkbox" id="elemento9" class="utopico"><label for="elemento9"> Comida abundante</label><br>
+	                    <input type="checkbox" id="elemento10" class="utopico"><label for="elemento10"> Rascacielos</label><br>
+                	</article>
+            	</div>
+            	<div class="col-md-3">
+	                <article>
+	                    <input type="checkbox" id="elemento11" class="distopico"><label for="elemento11"> Estaciones de gasolina</label><br>
+	                    <input type="checkbox" id="elemento12" class="distopico"><label for="elemento12"> Plantas a carbón</label><br>
+	                    <input type="checkbox" id="elemento13" class="distopico"><label for="elemento13"> Bombas nucleares</label><br>
+	                    <input type="checkbox" id="elemento14" class="distopico"><label for="elemento14"> Políticos corruptos</label><br>
+	                    <input type="checkbox" id="elemento15" class="distopico"><label for="elemento15"> Impuestos bajos</label><br>
+	                    <input type="checkbox" id="elemento16" class="distopico"><label for="elemento16"> Calor</label><br>
+	                    <input type="checkbox" id="elemento17" class="distopico"><label for="elemento17"> Impuestos altos</label><br>
+	                    <input type="checkbox" id="elemento18" class="distopico"><label for="elemento18"> Cacería</label><br>
+	                    <input type="checkbox" id="elemento19" class="distopico"><label for="elemento19"> Música en cada esquina</label><br>
+	                    <input type="checkbox" id="elemento20" class="distopico"><label for="elemento20"> Opresión a un género</label><br>
+	                </article>            		
+            	</div>
+            	<div class="col-md-3">
+	                <article>
+	                    <input type="checkbox" id="elemento21" class="distopico"><label for="elemento21"> Dembow</label><br>
+	                    <input type="checkbox" id="elemento22" class="distopico"><label for="elemento22"> Régimen dictatorial</label><br>
+	                    <input type="checkbox" id="elemento23" class="distopico"><label for="elemento23"> Guerras</label><br>
+	                    <input type="checkbox" id="elemento24" class="distopico"><label for="elemento24"> Hambre</label><br>
+	                    <input type="checkbox" id="elemento25" class="distopico"><label for="elemento25"> Delicuencia</label><br>
+	                    <input type="checkbox" id="elemento26" class="utopico"><label for="elemento26"> Frío</label><br>
+	                    <input type="checkbox" id="elemento27" class="utopico"><label for="elemento27"> Igualdad y Paz</label><br>
+	                    <input type="checkbox" id="elemento28" class="utopico"><label for="elemento28"> Información libre</label><br>
+	                    <input type="checkbox" id="elemento29" class="utopico"><label for="elemento29"> Inmortalidad</label><br>
+	                    <input type="checkbox" id="elemento30" class="utopico"><label for="elemento30"> No Contaminación</label><br>
+	                </article>            		
+            	</div>
+                
+            </div>
+            
+        </section>
+        
+        <input type="button" value="Generar" id="generarMundo" class="centralizarElemento">
+    </section>
+    
+    <section class="mundoDeseado">
+        <header class="centralizarTexto centralizarElemento">
+           <h2>Tu mundo es</h2>
+           <p id="ResultadoMundo">
+               No has generado ningun mundo
+           </p>
+        </header>
+        <figure id="mostrarResultado">
+            <img id="imgMundo" class="centralizarElemento" src="img/Ninguno.png" alt="">
+        </figure>
+        <div class="mundoDeseado--Porcentaje centralizarElemento">
+            <p id="PorcientoUtopico">Utopico: 0%</p>
+            <p id="PorcientoDistopico">Distopico: 0%</p>
+        </div>
+        
+        <button class="centralizarElemento mundoDeseado--BotonDetallesResultado">¿Porque este resultado?</button>
+    </section>
+    
+    <section class="porqueMundo">
+        <header class="centralizarTexto porqueMundo--Encabezado centralizarElemento">
+            ¿Porque ese resultado?
+        </header>
+        <section class="contenedor centralizarElemento">
+            
+            <article class="motivos">
+                <header class="motivos--Encabezado centralizarTexto">
+                    Tus deseos
+                </header>
+                <p id="articuloMotivos" >
+                    
+                </p>
+            </article>
+            <article class="detalleMotivo">
+                <header id="elementoActual" class="centralizarTexto">
+                    Elemento
+                </header>
+                <p id="detalleElemento">
+                    Detalles del elemento bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                </p>
+            </article>
+        
+        </section>
+        
+    </section>
+    <!--Javascript-->
+    <script src="js/EvaluadoraDeDeseos.js"></script>
+    <script src="js/EvaluadoraDeResultado.js"></script>
+    <script src="js/GenerarMundo.js"></script>
+</body>
+</html>

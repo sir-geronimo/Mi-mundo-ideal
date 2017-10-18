@@ -1,0 +1,428 @@
+@font-face 
+{
+    font-family:"Gill Sans MT";
+    src:url("../fonts/GillSansMT.otf"); 
+    font-weight:normal;
+    font-style:normal;
+}
+
+body
+{
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+div.header {
+  background-color: #485561;  
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 0 2px 3px gray;
+  text-decoration: none;
+
+}
+
+ul{
+  list-style:none;
+  font-family: 'Poppins', sans-serif;  margin-bottom: 0px;
+  /*font-family: 'Inconsolata', monospace;*/
+}
+
+.button, .btns, li > .btns{
+  padding: 0;
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    transition-duration: 0.2s; 
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: white;
+    border: none;  
+    cursor: pointer;
+}
+
+.button .btns a {
+  display: block;
+  padding: 30px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.button li a:hover{
+  background-color: #37414a;
+}
+
+.centralizarElemento
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centralizarTexto
+{
+    text-align: center;
+}
+
+.eleccionDeseos
+{
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+}
+
+    .encabezadoDeseos
+    {
+        background-color: white;
+        width: 90%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin-bottom: 10px;
+    }
+
+    #tituloTexto
+    {
+        font-size: 45px;
+        font-family: "Gill Sans MT";
+        margin: 0;
+    }
+
+    .eleccionDeseos p
+    {
+        font-size: 20px;
+        margin-top:-10px;
+    }
+
+    .articulosElecciones
+    {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+        .articulosElecciones header
+        {
+            padding: 25px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .articulosElecciones article label
+        {
+            font-size: 25px;
+            transition: 0.5s;
+            border: 1px solid black;
+            text-align: center;
+            display: block;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        .articulosElecciones article label:hover
+        {
+            cursor: pointer;
+        }
+        .articulosElecciones article input[type="checkbox"]
+        {
+            display: none;
+        }
+
+        .articulosElecciones article input[type="checkbox"]:checked + label
+        {
+            background-color: forestgreen;
+            color: white;
+        }
+
+    .contenedorFlex
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+        .contenedorFlex article
+        {
+            min-width: 300px;
+            box-sizing: border-box;
+        }
+        
+    
+
+
+    #generarMundo
+    {
+        display: block;
+        width: 130px;
+        font-size: 25px;
+        background-color: #0037aa;
+        color: white;
+        -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 4px 3px 0pxx rgba(0,0,0,0.5);
+        box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #generarMundo:hover
+    {
+        cursor: pointer;
+        background-color: #0062aa;
+        transition: 0.3s;
+    }
+
+
+    @media (min-width: 550px)
+    {
+
+         #tituloTexto
+        {
+            font-size: 70px;
+        }
+
+        .articulosElecciones
+        {
+            margin-bottom: 30px;
+        }
+        .encabezadoDeseos
+        {
+            max-width: 600px;
+        }
+
+    }
+
+
+
+.mundoDeseado
+{
+   
+}
+    .mundoDeseado header
+    {
+        height: 100px;
+        width: 90%;
+        background-color: white;
+        border: 2px solid black;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mundoDeseado header h2
+    {
+        font-family: "Gill Sans MT";
+        font-size: 30px;
+    }
+
+    .mundoDeseado header p
+    {
+        font-size: 20px;
+    }
+    .mundoDeseado figure
+    {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .mundoDeseado figure img
+    {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        
+    }
+
+    .mundoDeseado--Porcentaje
+    {
+        width: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .mundoDeseado--BotonDetallesResultado
+    {
+        width: 200px;
+        margin-top: 50px;
+        display: flex;
+        background-color: #0037aa;
+        color: white;
+        -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 4px 3px 0pxx rgba(0,0,0,0.5);
+        box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .mundoDeseado--BotonDetallesResultado:hover
+    {
+        cursor: pointer;
+        background-color: #0062aa;
+        transition: 0.3s;
+    }
+
+    @media (min-width: 400px)
+    {
+        .mundoDeseado header
+        {
+            max-width: 600px;
+        }
+        .mundoDeseado figure
+        {
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+    
+
+
+
+.porqueMundo
+{
+    margin-top: 100px;
+}
+    .porqueMundo--Encabezado
+    {
+        font-family: "Gill Sans MT";
+        border: 2px solid black;
+        width: 90%;
+        font-size: 25px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-weight: bold;
+        margin-bottom: 50px;
+        max-width: 600px;
+        background-color: white;
+    }
+    .porqueMundo .contenedor
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    @media (min-width: 600px)
+    {
+       .porqueMundo .contenedor
+        {
+            max-width: 600px;
+            justify-content: space-between;    
+        }
+        
+        .porqueMundo--Encabezado
+        {
+            font-size: 38px;
+        }
+        
+    }
+        .motivos
+        {
+            width: 100%;
+        }
+
+            .motivos--Encabezado
+            {
+                padding: 10px;
+                font-size: 28px;
+                font-weight: bold;
+                border-bottom: 2px solid black;
+                font-family: "Gill Sans MT"
+            }
+
+            .motivos li
+            {
+                font-size: 18px;
+                text-align: center;
+                padding: 10px;
+
+            }
+
+            .motivos li:hover
+            {
+                cursor: pointer;
+                text-decoration-line: underline;
+            }
+
+            @media (min-width: 600px)
+            {
+                .motivos
+                {
+                    max-width: 200px;
+                    border: 2px solid black;
+                }
+                
+                .motivos--Encabezado
+                {
+                    border-bottom: 2px solid black;
+                }
+                
+            }
+
+        .detalleMotivo
+        {
+            width: 90%;
+            order: -1;
+            max-width: none;
+            border: none;
+        }
+
+            .detalleMotivo header
+            {
+                padding: 10px;
+                font-size: 24px;
+                font-weight: bold;
+                
+            }
+
+            .detalleMotivo p
+            {
+                padding: 20px;
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+
+            @media (min-width: 600px)
+            {
+                .detalleMotivo
+                {
+                    border: 2px solid black;
+                    max-width: 300px;
+                }
+                
+            }
+    
+
+/*
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-md-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-3 {
+    width: 25%;
+  }
+*/
