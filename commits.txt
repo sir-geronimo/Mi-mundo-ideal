@@ -1,0 +1,5 @@
+commit 71327111c397b8ab332657b1fa26e96bee1e3749
+Author: Jossy Emil Devers Sánchez <jossydevers@gmail.com>
+Date:   Wed Oct 18 19:28:55 2017 -0400
+
+    Version 0.11 del proyecto
