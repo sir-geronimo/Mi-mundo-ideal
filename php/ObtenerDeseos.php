@@ -6,7 +6,7 @@
 
     if($_REQUEST["q"] != null) {
         $deseo = new Deseo(null, null, null, null);
-        $listaDeseos = new ListaDeseo();
+        $listaDeseos = new ListaDeseos();
         try {
             $NombreDeseo = $_REQUEST["q"];
             $conn = $db->getConexion();
@@ -19,16 +19,16 @@
             $resultadoConsulta = $consulta->fetchAll();
             foreach ($resultadoConsulta as $fila) {
                 $deseo = new Deseo($fila["ID"], $fila["Nombre"], $fila["Tipo"], $fila["Descripcion"]);
-                 if($_REQUEST["q"] != "0") {
+                 //if($_REQUEST["q"] != "0") {
                      echo $deseo->getJSON();
-                 }
-                 else {
-                     $listaDeseos.agregar($deseo);
-                 }
+                 //}
+                //  else {
+                //      $listaDeseos.agregar($deseo);
+                //  }
             }
-            if($_REQUEST["q"] == "0") {
-                echo $listaDeseos.getJSON();
-            }
+            // if($_REQUEST["q"] == "0") {
+            //     echo $listaDeseos.getJSON();
+            // }
         } catch(PDOException $e) {
             echo $e;
         }   

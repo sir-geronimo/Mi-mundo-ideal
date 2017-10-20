@@ -15,10 +15,10 @@ INSERT INTO Habitantes(Cantidad, ID_Mundo)
 	VALUES(0, 3);
 /* Informacion de los deseos */
 INSERT INTO Deseos(Nombre, Tipo, Descripcion)
-	VALUES("", 0, "");
+	VALUES("Centrales nucleares", 0, "Su uso es potencialmente perjudicial para el medio ambiente.");
 INSERT INTO Deseos(Nombre, Tipo, Descripcion)
-	VALUES("", 0, "");
+	VALUES("Carros voladores", 1, "Vehículo de uso doméstico capaz de transportar a personas volando o levitando.");
 INSERT INTO Deseos(Nombre, Tipo, Descripcion)
-	VALUES("", 0, "");
+	VALUES("Carros voladores", 0, "Su uso es potencialmente perjudicial para el medio ambiente");
 INSERT INTO Deseos(Nombre, Tipo, Descripcion)
-	VALUES("", 0, "");
+	VALUES("Inteligencia artificial", 0, "La Inteligencia Artificial (IA) es un objetivo que consiste en producir máquinas que realicen trabajos, procesos, acciones que, al ser evaluados por un humano, este no distinga si fue hecho por uno de su misma especie o por una IA.");

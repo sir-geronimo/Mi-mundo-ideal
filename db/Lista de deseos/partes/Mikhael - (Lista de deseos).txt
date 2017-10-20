@@ -1,0 +1,67 @@
+Ética 4 -> Exámenes -> Proyecto_Fermata -> Desarrollo
+-----------------------------------------------------
+LISTA DE DESEOS
+-----------------------------------------------------
+
+__
+Leyenda:
+
+• N -> Puede producir resultados negativos.
+• P -> Puede producir resultados positivos.
+
+__
+DESEO QUE MI MUNDO TENGA...
+
+- Energía renovable (P).
+
+    Es la energía que se obtiene de fuentes naturales virtualmente inagotables, ya sea por la inmensa cantidad de energía que contienen, o porque son capaces de regenerarse por medios naturales.
+
+    Ejemplo de energías renovables: eólica, geotérmica, hidroeléctrica, mareomotriz, solar, undimotriz, la biomasa y los biocarburantes.
+
+- Centrales nucleares (N).
+
+    Su uso es potencialmente perjudicial para el medio ambiente.
+
+    Son instalaciones industriales usadas para generar energía eléctrica apartir de la energía nuclear o atómica. La producción de energía no es gratuita, consume recursos y produce "Residuos radiactivos". Estos en dependencia de su daño al medio ambiente se clasifican en:
+
+    - Residuos desclasificables (o exentos)
+    - Residuos de baja actividad
+    - Residuos de media actividad
+    - Residuos de alta actividad o alta vida media
+
+
+- Carros voladores (P).
+
+    Vehículo de uso doméstico capaz de transportar a personas volando o levitando.
+
+- Gasolina y GLP gratis (N).
+
+    Su uso es potencialmente perjudicial para el medio ambiente.
+
+    La Gasolina y el Gas Licuado de Petróleo (GLP) son "combustibles fósiles". Los combustibles fósiles son aquellos que proceden de la biomasa (seres vivos) producida hace mucho tiempo, el cual, luego de pasar por grandes transformaciones llega a contener sustancias de gran contenido energético.
+
+    El uso masivo de este tipo de combustibles produce efectos negativos en nuestro planeta. Uno de ellos es el "calentamiento global". En la actualidad se investigan tecnologías que los logren sustituir.
+
+- Inteligencia artificial (P).
+
+    La Inteligencia Artificial (IA) es un objetivo que consiste en producir máquinas que realicen trabajos, procesos, acciones que, al ser evaluados por un humano, este no distinga si fue hecho por uno de su misma especie o por una IA.
+
+- Armas nucleares (N).
+
+    Las armas nucleares son explosivos de alto poder que utilizan energía nuclear o atómica.
+
+    Las explosiones nucleares producen diversos tipos de efectos todos ellos tremendamente destructivos en todos los aspectos. Se distinguen en dos categorías. Efectos inmediatos o primarios y efectos retardados o secundarios. Entre los inmediatos estarían la onda expansiva, el pulso de calor, la radiación ionizante y el pulso electromagnético (EMP). En el grupo de los retardados estarían los efectos sobre el clima, el medio ambiente así como el daño generalizado a infraestructuras básicas para el sustento humano.
+
+    Leer más en https://es.wikipedia.org/wiki/Efectos_de_las_armas_nucleares
+
+- Holografía (P).
+
+    La holografía o vision grafica es una técnica avanzada de fotografía que consiste en crear imágenes tridimensionales basada en el empleo de la luz. 
+
+    Aplicaciones:
+
+    - En los reproductores DVD, en las tarjetas de crédito, en los discos compactos y en los billetes.
+    - Símbolo de originalidad y seguridad.
+    - Reproducción de imagen y vídeo tridimensional: múltiples aplicaciones en sectores como la televisión, el diseño industrial, la medicina, la educación, la investigación, las comunicaciones... 3​
+
+- Insecticidas (Destruye insectos)

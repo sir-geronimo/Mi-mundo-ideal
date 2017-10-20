@@ -77,7 +77,8 @@ function evaluarDeseos(evaluadora) {
 function generarDeseos() {
     var ArticuloElemento = document.getElementsByClassName("ArticuloElemento");
     var AJAX_Conexion_Elementos = new AJAX("php/ObtenerDeseos.php", "?q=0");
-    AJAX_Conexion_1.activar(function(RespuestaJSON) {
+    AJAX_Conexion_Elementos.activar(function(RespuestaJSON) {
+        console.log(RespuestaJSON);
         var arrayJSON_Deseos = JSON.parse(RespuestaJSON);
         for(var i = 0; i < arrayJSON_Deseos.length; i++) {
             if(arrayJSON_Deseos[i] != undefined) {

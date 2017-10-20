@@ -1,5 +1,5 @@
 <?php
-    class ListaDeseos() {
+    class ListaDeseos {
         private $deseos;
         public function __construct() {
             $this->deseos = null;

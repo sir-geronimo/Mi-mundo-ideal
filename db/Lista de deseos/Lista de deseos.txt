@@ -1,0 +1,118 @@
+Ética 4 -> Exámenes -> Proyecto_Fermata -> Desarrollo
+-----------------------------------------------------
+LISTA DE DESEOS
+-----------------------------------------------------
+
+__
+Leyenda:
+
+• N -> Puede producir resultados negativos.
+• P -> Puede producir resultados positivos.
+
+1- Centrales nucleares (N).
+
+    Su uso es potencialmente perjudicial para el medio ambiente.
+
+    Son instalaciones industriales usadas para generar energía eléctrica apartir de la energía nuclear o atómica. La producción de energía no es gratuita, consume recursos y produce "Residuos radiactivos". Estos en dependencia de su daño al medio ambiente se clasifican en:
+
+    - Residuos desclasificables (o exentos)
+    - Residuos de baja actividad
+    - Residuos de media actividad
+    - Residuos de alta actividad o alta vida media
+
+
+2- Carros voladores (P).
+
+    Vehículo de uso doméstico capaz de transportar a personas volando o levitando.
+
+3- Gasolina y GLP gratis (N).
+
+    Su uso es potencialmente perjudicial para el medio ambiente.
+
+    La Gasolina y el Gas Licuado de Petróleo (GLP) son "combustibles fósiles". Los combustibles fósiles son aquellos que proceden de la biomasa (seres vivos) producida hace mucho tiempo, el cual, luego de pasar por grandes transformaciones llega a contener sustancias de gran contenido energético.
+
+    El uso masivo de este tipo de combustibles produce efectos negativos en nuestro planeta. Uno de ellos es el "calentamiento global". En la actualidad se investigan tecnologías que los logren sustituir.
+
+4- Inteligencia artificial (P).
+
+La Inteligencia Artificial (IA) es un objetivo que consiste en producir máquinas que realicen trabajos, procesos, acciones que, al ser evaluados por un humano, este no distinga si fue hecho por uno de su misma especie o por una IA.
+
+5- Armas nucleares (N).
+
+    Las armas nucleares son explosivos de alto poder que utilizan energía nuclear o atómica.
+
+    Las explosiones nucleares producen diversos tipos de efectos todos ellos tremendamente destructivos en todos los aspectos. Se distinguen en dos categorías. Efectos inmediatos o primarios y efectos retardados o secundarios. Entre los inmediatos estarían la onda expansiva, el pulso de calor, la radiación ionizante y el pulso electromagnético (EMP). En el grupo de los retardados estarían los efectos sobre el clima, el medio ambiente así como el daño generalizado a infraestructuras básicas para el sustento humano.
+
+    Leer más en https://es.wikipedia.org/wiki/Efectos_de_las_armas_nucleares
+
+6- Holografía (P).
+
+    La holografía o vision grafica es una técnica avanzada de fotografía que consiste en crear imágenes tridimensionales basada en el empleo de la luz. 
+
+    Aplicaciones:
+
+    - En los reproductores DVD, en las tarjetas de crédito, en los discos compactos y en los billetes.
+    - Símbolo de originalidad y seguridad.
+    - Reproducción de imagen y vídeo tridimensional: múltiples aplicaciones en sectores como la televisión, el diseño industrial, la medicina, la educación, la investigación, las comunicaciones... 3​
+
+7- Insecticidas (N)>
+
+    Un insecticida es un compuesto químico utilizado para matar insectos. Su usan mayormente en plantaciones de alimentos de distintas industrias como medio para eliminar a las plagas. El problema está en que no solo las plagas son eliminadas, también otro tipo de fauna, en particular a las abejas. Las abejas cumplen uno de las funciones más importantes, tediosas y complejas para la producción de alimento, y es la "polinización".
+
+
+8- Energía solar (P):
+
+    Ayudan a tener un buen ambiente para el ser humano, utilizando el sol como fuente de energía atreves de paneles solares podremos, almacenarla y utilizarla después ya sea en el día o en la noche.
+
+9- Energía Eólica (P):
+
+    Teniendo el viento como fuente de energía, podríamos hasta mantener empresas con ella y contribuir al medio ambiente.
+
+10- Energía Eléctrica (P):
+
+    Energía por medio de electricidad, nos permite usar electrodomésticos, entre otras cosa.
+
+11- Redes sociales (P):
+
+    Nos permiten estar comunicados aun a distancias, tales como: Facebook, whatsaap, etc.
+
+12- Naves espaciales (P):
+
+    Son naves que nos facilitan ir a otro planeta y poder descubrir aquellas cosas que desconocemos.
+
+13- Computación cuántica (P): 
+
+    Se basa en el uso de cúbits en lugar de bits, y da lugar a nuevas puertas lógicas que hacen posibles nuevos algoritmos.
+
+
+
+    La holografía o visión grafica es una técnica avanzada de fotografía que consiste en crear imágenes tridimensionales basada en el empleo de la luz.
+
+
+
+14- Nanotecnología (P):
+
+    La nanotecnología es la manipulación de la materia a escala nanométrica. De entre las muchas áreas de aplicación está en la medicina. En este campo se encargaría de poder acceder a lugares nunca accedidos con un control nunca visto para la eliminación de patógenos perjudiciales para la salud.
+
+15- Dispositivos de registro de actividad (N)
+    
+    Con cámaras y demás dispositivos que sirven para obtener datos se pueden compilar para formar una base de datos en las que instituciones especializadas hagan un uso determinado. Este tipo de tecnología violaría con la privacidad de muchas personas y provocaría un sin número de casos relacionados con el ocultamiento de información.
+
+
+
+16- Plantas de carbón (N):
+
+    Significa perforar la tierra, dañando el orden natural y contaminando el medio ambiente para extraer un mineral que contamina todo lo que toca.
+
+17- Estaciones de carga eléctrica (P):
+
+    Podríamos tener coches eléctricos y así no aportaran a la contaminación por parte del CO2y demás gases tóxicos.
+
+
+18- Cargadores inalámbricos (P)
+
+    Son un tipo de cargador usados para poder cargar dispositivos eléctricos sin necesidad de conectarlo físicamente a un transformador o cable eléctrico.
+
+19- Vehículos autónomos (P)
+    
+   Es un vehículo capaz de imitar las capacidades humanas de manejo y control. Como vehículo autónomo, es capaz de percibir el medio que le rodea y navegar en consecuencia. Una de las mayores aplicaciones sería en el transporte público y otra sería en los vehículos de carga con ruta fija.
