@@ -11,8 +11,7 @@ class AJAX {
         }
         if(window.XMLHttpRequest) {
             this.xmlHTTP = new XMLHttpRequest();
-        }
-        else {
+        } else {
             this.xmlHTTP = new ActiveXObject(Microsoft.XMLHTTP);
         }
         this.xmlHTTP.onreadystatechange = function() {
