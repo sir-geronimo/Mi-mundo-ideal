@@ -1,4 +1,4 @@
-
+USE fermata;
 /* Informacion de los mundos */
 INSERT INTO Mundos(Nombre, Descripcion)
 	VALUES('Utopico', 'Mundo perfecto...');
@@ -13,3 +13,12 @@ INSERT INTO Habitantes(Cantidad, ID_Mundo)
 	VALUES(0, 2);
 INSERT INTO Habitantes(Cantidad, ID_Mundo)
 	VALUES(0, 3);
+/* Informacion de los deseos */
+INSERT INTO Deseos(Nombre, Tipo, Descripcion)
+	VALUES("", 0, "");
+INSERT INTO Deseos(Nombre, Tipo, Descripcion)
+	VALUES("", 0, "");
+INSERT INTO Deseos(Nombre, Tipo, Descripcion)
+	VALUES("", 0, "");
+INSERT INTO Deseos(Nombre, Tipo, Descripcion)
+	VALUES("", 0, "");
