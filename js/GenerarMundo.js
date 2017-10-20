@@ -59,6 +59,16 @@ function Generar() {
             ResultadoMundo.innerHTML = evaluadora.obtenerMundo();
             
             resultado.generarResultado();
+            var ElementosGenerados = document.getElementsByClassName("ElementosGenerados");
+            for(var i = 0; i < ElementosGenerados.length; i++) {
+                ElementosGenerados[i].addEventListener("click", function() {
+                    var NombreDeseo = ElementosGenerados[i].innerHTML;
+                    var AJAX_Conexion_1 = new AJAX("../php/ObtenerDeseos.php", "?q=" + NombreDeseo);
+                    AJAX_Conexion_1.activar(function(respuesta) {
+                        ContenedorResultado.innerHTML = respuesta;
+                    });
+                });
+            }
             
         } else {
             

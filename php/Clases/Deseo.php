@@ -2,11 +2,13 @@
     
     class Deseo {
         
+        // Atributos
         private $id = null;
         private $nombre = null;
         private $tipo = null;
         private $descripcion = null;
         
+        // Constructor
         public function __construct($id, $nombre, $tipo, $descripcion) {
             
             $this->id = $id;
@@ -28,6 +30,9 @@
         }
         public function getDescripcion() {
             return $descripcion;
+        }
+        public function getJSON() {
+            return json_encode(array($id, $nombre, $tipo, $descripcion));
         }
         
         // Metodos

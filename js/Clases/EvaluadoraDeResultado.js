@@ -39,6 +39,7 @@ class EvaluadoraDeResultado {
         for(var i = 0; i < this.deseos.length; i++) 
         {
             elementosLI[i] = document.createElement("li");
+            elementosLI[i].setAttribute("class", "ElementosGenerados");
             var label = this.obtenerLabel(this.deseos[i]);
             elementosLI[i].innerHTML = label.innerHTML;
             elementoUL.appendChild(elementosLI[i]);

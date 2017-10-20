@@ -2,10 +2,12 @@
     
     class Mundo {
         
+        // Atributos
         private $id = null;
         private $nombre = null;
         private $descripcion = null;
         
+        // Constructor
         public function __construct($id, $nombre, $descripcion) {
             
             $this->id = $id;
