@@ -3,6 +3,7 @@
     // Importando clases
     require("Clases/BaseDeDatos.php");
     
-    BaseDeDatos $db = new BaseDeDatos("localhost", "fermata", "root", "");
+    // Base de datos
+    $db = new BaseDeDatos("localhost", "fermata", "root", "");
 
 ?>

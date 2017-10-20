@@ -1,6 +1,6 @@
 <?php
 
-    class BaseDatos {
+    class BaseDeDatos {
         
         // Atributos
         private $host = null;
@@ -17,30 +17,30 @@
             $this->db = $db;               // Nombre de la db.
             $this->usuario = $usuario;     // Nombre de usuario de la db.
             $this->clave = $clave;         // Contraseña de la db.
-            
+
             $this->conectar();
             
         }
         
         // Getters
         public function getHost() {
-            return $host;
+            return $this->host;
         }
-        public function getNombreDB() {
-            return $db;
+        public function getDB() {
+            return $this->db;
         }
-        public function getNombreUsuario() {
-            return $usuario;
+        public function getUsuario() {
+            return $this->usuario;
         }
         public function getConexion() {
-            return $conn;
+            return $this->conn;
         }
         
         // Metodos
         public function conectar() {
-            
+            $datos = array($this->db, $this->host, $this->usuario, $this->clave);
             try {
-                $conn = new PDO("mysql: host=$host; dbname=$nombreDB", $nombreUsuario, $pass);
+                $this->conn = new PDO("mysql:dbname=$datos[0];host=$datos[1]", $datos[2], $datos[3]);
             }
             catch(Exception $e) {
                 echo "<script> alert('Error en la conexion con la base de datos...'); </script>";
@@ -48,10 +48,10 @@
             
         }
         public function desconectar() {
-            $conn.close();
+            $this->conn.close();
         }
         public function __toString() {
-            return "Nombre de la base de datos: " . $db;
+            return "Nombre de la base de datos: " . $this->db;
         }
         
     }

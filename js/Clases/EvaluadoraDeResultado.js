@@ -43,7 +43,6 @@ class EvaluadoraDeResultado {
             var label = this.obtenerLabel(this.deseos[i]);
             elementosLI[i].innerHTML = label.innerHTML;
             elementoUL.appendChild(elementosLI[i]);
-            console.log(i);
         }
         
         this.contenedor.appendChild(elementoUL);

@@ -4,19 +4,22 @@
     require("config.php");
     require("Clases/Deseo.php");
     
-    if($_REQUEST["NombreDeseo"] != null) {
-        Deseo $deseo = null;
+    if($_REQUEST["q"] != null) {
+        $deseo = new Deseo(null, null, null, null);
         try {
-            $NombreDeseo = $_REQUEST["NombreDeseo"];
-            $conn = $db.getConexion();
-            $consulta = $conn->prepare("SELECT * FROM Deseos WHERE Nombre = :NombreDeseo");
+            $NombreDeseo = $_REQUEST["q"];
+            $conn = $db->getConexion();
+            $sql = "SELECT * FROM Deseos WHERE Nombre = :NombreDeseo";
+            $consulta = $conn->prepare($sql);
             $consulta->execute(array("NombreDeseo" => $NombreDeseo));
             $resultadoConsulta = $consulta->fetchAll();
             foreach ($resultadoConsulta as $fila) {
                 $deseo = new Deseo($fila["ID"], $fila["Nombre"], $fila["Tipo"], $fila["Descripcion"]);
             }
-            echo $deseo.getJSON();
-        } catch(error) {}
+            echo $deseo->getJSON();
+        } catch(PDOException $e) {
+            echo $e;
+        }
         
     }
 

@@ -20,24 +20,25 @@
         
         // Getters
         public function getID() {
-            return $id;
+            return $this->id;
         }
         public function getNombre() {
-            return $nombre;
+            return $this->nombre;
         }
         public function getTipo() {
-            return $tipo;
+            return $this->tipo;
         }
         public function getDescripcion() {
-            return $descripcion;
+            return $this->descripcion;
         }
         public function getJSON() {
-            return json_encode(array($id, $nombre, $tipo, $descripcion));
+            $datos = array("ID" => $this->id, 'Nombre' => $this->nombre, 'Tipo' => $this->nombre, 'Descripion' => $this->descripcion);
+            return json_encode($datos);
         }
         
         // Metodos
         public function __toString() {
-            return $nombre;
+            return $this->nombre;
         }
         
     }
