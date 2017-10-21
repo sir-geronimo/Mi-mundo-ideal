@@ -1,6 +1,12 @@
 // Inicializar variables.
 var DeseosUtopicos;
 var DeseosDistopicos;
+var ContadorUtopicos;
+var ContadorDistopicos;
+var CantidadDeseosUtopicos;
+var CantidadDeseosDistopicos;
+var DeseosUtopicos_Checked;
+var DeseosDistopicos_Checked;
 var PorcientoUtopico = document.getElementById("PorcientoUtopico");
 var PorcientoDistopico = document.getElementById("PorcientoDistopico");
 var ImgMundo = document.getElementById("imgMundo");
@@ -8,12 +14,6 @@ var ResultadoMundo = document.getElementById("ResultadoMundo");
 var BotonGenerar = document.getElementById("generarMundo");
 var ContenedorResultado = document.getElementById("articuloMotivos");
 var DetalleElemento = document.getElementById("detalleElemento");
-var ContadorUtopicos = 0;
-var ContadorDistopicos = 0;
-var CantidadDeseosUtopicos = 0;
-var CantidadDeseosDistopicos = 0;
-var DeseosUtopicos_Checked = [];
-var DeseosDistopicos_Checked = [];
 
 main();
 
@@ -25,6 +25,13 @@ function main() {
     DeseosDistopicos = document.getElementsByClassName("distopico"); 
     // Poner el boton generar a la escucha.
     BotonGenerar.addEventListener("click", function() {
+        // Inicializar variables.
+        ContadorUtopicos = 0;
+        ContadorDistopicos = 0;
+        CantidadDeseosUtopicos = 0;
+        CantidadDeseosDistopicos = 0;
+        DeseosUtopicos_Checked = [];
+        DeseosDistopicos_Checked = [];
         // Contar los deseos.
         contarDeseos();
         // Implementar las clases evaluadoras.
