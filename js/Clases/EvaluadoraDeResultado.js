@@ -37,9 +37,9 @@ class EvaluadoraDeResultado {
             ElementosGenerados[i].addEventListener("click", function() {
                 var AJAX_Conexion_Resultado = new AJAX("php/ObtenerDeseos.php", "?q=" + this.innerHTML);
                 AJAX_Conexion_Resultado.activar(function(RespuestaJSON) {
-                    var ElementoDescripcion = JSON.parse(RespuestaJSON)[3];
-                    if(ElementoDescripcion != undefined) {
-                        DetalleElemento.innerHTML = ElementoDescripcion;
+                    var elemento = JSON.parse(RespuestaJSON);
+                    if(elemento["Descripcion"] != undefined) {
+                        DetalleElemento.innerHTML = elemento["Descripcion"];
                     }
                 });
             });

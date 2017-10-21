@@ -1,32 +1,34 @@
+// Inicializar variables.
+var DeseosUtopicos;
+var DeseosDistopicos;
+var PorcientoUtopico = document.getElementById("PorcientoUtopico");
+var PorcientoDistopico = document.getElementById("PorcientoDistopico");
+var ImgMundo = document.getElementById("imgMundo");
+var ResultadoMundo = document.getElementById("ResultadoMundo");
+var BotonGenerar = document.getElementById("generarMundo");
+var ContenedorResultado = document.getElementById("articuloMotivos");
+var DetalleElemento = document.getElementById("detalleElemento");
+var ContadorUtopicos = 0;
+var ContadorDistopicos = 0;
+var CantidadDeseosUtopicos = 0;
+var CantidadDeseosDistopicos = 0;
+var DeseosUtopicos_Checked = [];
+var DeseosDistopicos_Checked = [];
+
 main();
 
 function main() {
-    // Inicializar variables.
-    var PorcientoUtopico = document.getElementById("PorcientoUtopico");
-    var PorcientoDistopico = document.getElementById("PorcientoDistopico");
-    var ImgMundo = document.getElementById("imgMundo");
-    var ResultadoMundo = document.getElementById("ResultadoMundo");
-    var BotonGenerar = document.getElementById("generarMundo");
-    var ContenedorResultado = document.getElementById("articuloMotivos");
-    var DetalleElemento = document.getElementById("detalleElemento");
     // Generar deseos
     generarDeseos();
     // Inicializar deseos
-    var DeseosUtopicos = document.getElementsByClassName("utopico");
-    var DeseosDistopicos = document.getElementsByClassName("distopico"); 
+    DeseosUtopicos = document.getElementsByClassName("utopico");
+    DeseosDistopicos = document.getElementsByClassName("distopico"); 
     // Poner el boton generar a la escucha.
     BotonGenerar.addEventListener("click", function() {
-        // Inicializar variables.
-        var ContadorUtopicos = 0;
-        var ContadorDistopicos = 0;
-        var CantidadDeseosUtopicos = 0;
-        var CantidadDeseosDistopicos = 0;
-        var DeseosUtopicos_Checked = [];
-        var DeseosDistopicos_Checked = [];
         // Contar los deseos.
         contarDeseos();
         // Implementar las clases evaluadoras.
-        evaluar(new EvaluadoraDeDeseos(ContadorUtopicos, ContadorDistopicos));
+        evaluarDeseos(new EvaluadoraDeDeseos(ContadorUtopicos, ContadorDistopicos));
     });
 }
 
@@ -84,20 +86,22 @@ function generarDeseos() {
             var tipoDeseo = deseoActual["Tipo"] == 1 ? "utopico" : "distopico"; 
             var inputCheckbox = document.createElement("input");
             inputCheckbox.setAttribute("type", "checkbox");
-            inputCheckbox.setAttribute("id", "elemento" + (i + 1));
-            inputCheckbox.setAttribute("class", tipoDeseo);
+            inputCheckbox.id = "elemento" + (i + 1);
+            inputCheckbox.className = tipoDeseo;
             var labelCheckbox = document.createElement("label");
             labelCheckbox.setAttribute("for", "elemento" + (i + 1));
-            labelCheckbox.innerHTML = deseoActual[1];
-            inputCheckbox.appendChild(labelCheckbox);
+            labelCheckbox.innerHTML = deseoActual["Nombre"];
             ArticuloElemento[0].appendChild(inputCheckbox);
             // Insertar en el html.
             if(i <= 10) {
                 ArticuloElemento[0].appendChild(inputCheckbox);
+                ArticuloElemento[0].appendChild(labelCheckbox);
             } else if(i <= 20) {
                 ArticuloElemento[1].appendChild(inputCheckbox);
+                ArticuloElemento[1].appendChild(labelCheckbox);
             } else if(i <= 30) {
                 ArticuloElemento[2].appendChild(inputCheckbox);
+                ArticuloElemento[2].appendChild(labelCheckbox);
             }
         }
     });
