@@ -76,29 +76,28 @@ function evaluarDeseos(evaluadora) {
 
 function generarDeseos() {
     var ArticuloElemento = document.getElementsByClassName("ArticuloElemento");
-    var AJAX_Conexion_Elementos = new AJAX("php/ObtenerDeseos.php", "?q=0");
+    var AJAX_Conexion_Elementos = new AJAX("php/ObtenerDeseos.php", "?q=null");
     AJAX_Conexion_Elementos.activar(function(RespuestaJSON) {
-        console.log(RespuestaJSON);
         var arrayJSON_Deseos = JSON.parse(RespuestaJSON);
         for(var i = 0; i < arrayJSON_Deseos.length; i++) {
-            if(arrayJSON_Deseos[i] != undefined) {
-                $deseoActual = JSON.parse(arrayJSON_Deseos[i]);
-                var inputCheckbox = document.createElement("input");
-                inputCheckbox.setAttribute("type", "checkbox");
-                inputCheckbox.setAttribute("id", "elemento" + (i + 1));
-                inputCheckbox.setAttribute("class", $deseoActual[2]);
-                var labelCheckbox = document.createElement("label");
-                labelCheckbox.setAttribute("for", "elemento" + (i + 1));
-                labelCheckbox.innerHTML = $deseoActual[1];
-                inputCheckbox.appendChild(labelCheckbox);
-                // Insertar en el html
-                if(i <= 10) {
-                    ArticuloElemento[0].appendChild(inputCheckbox);
-                } else if(i <= 20) {
-                    ArticuloElemento[0].appendChild(inputCheckbox);
-                } else if(i <= 30) {
-                    ArticuloElemento[0].appendChild(inputCheckbox);
-                }
+            deseoActual = JSON.parse(arrayJSON_Deseos[i]);
+            var tipoDeseo = deseoActual["Tipo"] == 1 ? "utopico" : "distopico"; 
+            var inputCheckbox = document.createElement("input");
+            inputCheckbox.setAttribute("type", "checkbox");
+            inputCheckbox.setAttribute("id", "elemento" + (i + 1));
+            inputCheckbox.setAttribute("class", tipoDeseo);
+            var labelCheckbox = document.createElement("label");
+            labelCheckbox.setAttribute("for", "elemento" + (i + 1));
+            labelCheckbox.innerHTML = deseoActual[1];
+            inputCheckbox.appendChild(labelCheckbox);
+            ArticuloElemento[0].appendChild(inputCheckbox);
+            // Insertar en el html.
+            if(i <= 10) {
+                ArticuloElemento[0].appendChild(inputCheckbox);
+            } else if(i <= 20) {
+                ArticuloElemento[1].appendChild(inputCheckbox);
+            } else if(i <= 30) {
+                ArticuloElemento[2].appendChild(inputCheckbox);
             }
         }
     });

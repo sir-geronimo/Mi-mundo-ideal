@@ -2,10 +2,10 @@
     class ListaDeseos {
         private $deseos;
         public function __construct() {
-            $this->deseos = null;
+            $this->deseos = array();
         }
         public function agregar($deseo) {
-            $this->deseos.array_push($deseo);
+            array_push($this->deseos, $deseo);
         }
         public function getDeseos() {
             return $this->deseos;

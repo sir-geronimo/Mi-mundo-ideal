@@ -26,7 +26,7 @@
             return $this->descripcion;
         }
         public function getJSON() {
-            $datos = array("ID" => $this->id, 'Nombre' => $this->nombre, 'Tipo' => $this->nombre, 'Descripion' => $this->descripcion);
+            $datos = array("ID" => $this->id, 'Nombre' => $this->nombre, 'Tipo' => $this->tipo, 'Descripion' => $this->descripcion);
             return json_encode($datos);
         }
         // Metodos
