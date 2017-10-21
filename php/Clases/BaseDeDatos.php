@@ -31,12 +31,7 @@
         // Metodos
         public function conectar() {
             $datos = array($this->db, $this->host, $this->usuario, $this->clave);
-            try {
-                $this->conn = new PDO("mysql:dbname=$datos[0];host=$datos[1]", $datos[2], $datos[3]);
-            }
-            catch(Exception $e) {
-                echo "<script> alert('Error en la conexion con la base de datos...'); </script>";
-            }   
+            $this->conn = new PDO("mysql:dbname=$datos[0];host=$datos[1]", $datos[2], $datos[3]);
         }
         public function desconectar() {
             $this->conn.close();
