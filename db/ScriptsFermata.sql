@@ -3,7 +3,16 @@ USE Fermata;
 
 CREATE TABLE Jugadores (
     id int not null,
-        primary key (id_jugador),
+        primary key (id)
+);
+
+CREATE TABLE Mundo (
+    id int not null,
+        primary key(id),
+	porcentaje_distopia int not null,
+    porcentaje_utopia int not null,
+    tipo tinyint not null,
+        check (tipo <= 2) -- Tipo puede ser: 0 (utópico), 1 (utópico), 2 (normal).
 );
 
 CREATE TABLE Deseos (
@@ -15,15 +24,7 @@ CREATE TABLE Deseos (
         primary key (id),
     nombre varchar (60) not null,
     descripcion text not null,
-    tipo tinyint not null,
-        check (tipo <= 2)
-)
-
-CREATE TABLE Mundo (
-    id int not null,
-        primary key(id),
-	porcentaje_distopia int not null,
-    porcentaje_utopia int not null,
-    tipo tinyint not null,
-        check (tipo <= 2)
+    tipo bit not null -- Tipo puede ser: 0, positivo, 1, negativo.
 );
+
+drop table Deseos
